@@ -1,0 +1,54 @@
+.fondo {
+  line-height: 5;
+}
+@font-face {
+  font-family: "recetas";
+  src: url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+}
+.container {
+  font-family: "recetas";
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  color: #5f4f0a;
+}
+.search {
+  display: flex;
+  gap: 5px;
+}
+.container input {
+  border-radius: 5px;
+  width: 70%;
+}
+.button {
+  width: auto;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #5f4f0a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "recetas";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 2;
+  margin: 0;
+  outline: none;
+  padding: 1rem auto;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button:hover {
+  box-shadow: #5f4f0a 0 0 0 3px, transparent 0 0 0 0;
+}

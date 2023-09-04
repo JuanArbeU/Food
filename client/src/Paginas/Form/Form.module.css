@@ -1,0 +1,24 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(202, 181, 48, 0.344);
+}
+@font-face {
+  font-family: "recetas";
+  src: url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+}
+.container input{
+  width: 500px;
+}
+h1, h3, .prev {
+  text-align: center; /* Para centrar el contenido de estos elementos */
+  font-family: 'recetas';
+  color: #5f4f0a;
+}
+.prev{
+  display: flex;
+  justify-content: center;
+}

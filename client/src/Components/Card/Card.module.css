@@ -1,0 +1,60 @@
+.card {
+  max-width: 350px;
+  display: flex;
+  margin: 30px;
+  height: 430px;
+  background-color: white;
+  border-radius: 15px;
+}
+.card .image {
+  display: flex;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.card .image img {
+  overflow: hidden;
+  display: flex;
+  max-height: 50%;
+  max-width: auto;
+}
+.card .details {
+  position: absolute;
+  width: 290px;
+  height: 430px;
+  text-align: center;
+}
+.card .details .center {
+  position: relative;
+  top: 51%; /* Centrado al 50% en sentido vertical, a la mitad viniendo de arriba */
+}
+.card .details .center .Link {
+  text-decoration: none;
+  align-items: center;
+}
+@font-face {
+  font-family: "recetas";
+  src: url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+}
+.card .details .center h1 {
+  font-family: "recetas";
+  margin: 15px;
+  padding: 0;
+  line-height: 20px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: #5f4f0a;
+}
+.card .details .center p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  margin: 15px;
+  padding: 5px;
+  color: #ffffff;
+  display: block;
+  font-size: medium;
+  list-style: none;
+  color: rgb(215, 167, 77);
+}

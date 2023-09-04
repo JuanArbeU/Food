@@ -1,0 +1,71 @@
+.fondo {
+  width: 100vw;
+  height: auto;
+  background-color: rgba(202, 181, 48, 0.344);
+}
+.fondo img {
+  width: 60%;
+  height: auto;
+}
+@font-face {
+  font-family: "recetas";
+  src: url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+}
+.container {
+  color: #5f4f0a;
+  font-family: "recetas";
+  align-items: center;
+  padding: 2%;
+  flex-direction: column;
+  display: flex;
+}
+h2 h3 {
+  line-height: 20px;
+}
+.dietas {
+  line-height: 8px;
+}
+.info {
+  gap: 20px;
+  display: flex;
+  padding: 10px;
+  width: 90%;
+}
+.p {
+  margin-top: 5px;
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  width: 90%;
+}
+span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.container button {
+  width: 1px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #5f4f0a;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0.01 0.01 auto;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  white-space: nowrap;
+  border: 0;
+}
+.container button:hover {
+  box-shadow: #5f4f0a 0 0 0 3px, transparent 0 0 0 0;
+}
