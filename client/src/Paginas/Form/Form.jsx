@@ -101,7 +101,7 @@ export default function Form() {
 
   const postRecipe = (recipe) => {
     axios
-      .post(`http://localhost:3001/recipes`, JSON.stringify(recipe), {
+      .post(`https://food-production-3cb5.up.railway.app/recipes`, JSON.stringify(recipe), {
         headers: {
           "Content-Type": "application/json",
         },

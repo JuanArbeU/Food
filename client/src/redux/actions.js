@@ -13,7 +13,7 @@ export const FILTER_OPTIONS = "FILTER_OPTIONS"
 export const getRecipes = () => {
   return async function (dispatch) {
     //console.log('me ejecuto');
-    const recipesData = await axios.get(`http://localhost:3001/recipes`)
+    const recipesData = await axios.get(`https://food-production-3cb5.up.railway.app/recipes`)
     const recipes = recipesData.data
     dispatch({ type: GET_ALL, payload: recipes });
   };
@@ -21,7 +21,7 @@ export const getRecipes = () => {
 
 export const getDetails = ({id, creada}) => {
   return async function (dispatch) {
-    const recipeData = await axios.get(`http://localhost:3001/recipes/${id}${creada?'?creada=true':''}`);
+    const recipeData = await axios.get(`https://food-production-3cb5.up.railway.app/recipes/${id}${creada?'?creada=true':''}`);
     const detail = recipeData.data;
     dispatch({ type: GET_DETAILS, payload: detail });
   };
@@ -29,7 +29,7 @@ export const getDetails = ({id, creada}) => {
 
 export const getName = (name) => {
   return async function (dispatch) {
-    const recipeData = await axios.get(`http://localhost:3001/recipes/${name}`);
+    const recipeData = await axios.get(`https://food-production-3cb5.up.railway.app/recipes/${name}`);
     const recipes = recipeData.data;
     dispatch({ type: GET_NAME, payload: recipes });
   };
@@ -37,7 +37,7 @@ export const getName = (name) => {
 
 export const getDiets = () => {
   return async function (dispatch) {
-    const response = await axios.get(`http://localhost:3001/diets`);
+    const response = await axios.get(`https://food-production-3cb5.up.railway.app/diets`);
     const diets = response.data;
     dispatch({ type: GET_DIETS, payload: diets });
   };
